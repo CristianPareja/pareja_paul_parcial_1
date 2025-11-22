@@ -74,9 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
             valor.textContent = v;
 
             const formula = document.createElement('div');
-            formula.textContent = (i < 2)
-                ? `(${v})`
-                : `(${arr[i-2]} + ${arr[i-1]})`;
+            formula.textContent = (i < 2) ? `(${v})`: `(${arr[i-2]} + ${arr[i-1]})`;
 
             celda.appendChild(indice);
             celda.appendChild(valor);
@@ -96,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function mostrarMensaje(texto) {
-        mensaje.textContent = texto; // mensaje simple sin estilos
+        mensaje.textContent = texto; 
     }
 
     generarSecuencia();
