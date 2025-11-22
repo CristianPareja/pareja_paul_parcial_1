@@ -1,0 +1,42 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.container{
+    max-width: 800px;
+    margin: auto;
+}
+
+.controls{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+#mensaje{
+    min-height: 18px;
+}
+
+.result{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 50px;
+}
+
+.cell{
+    border: 1px solid #ccc;
+    padding: 6px;
+    text-align: center;
+}
+
+.value.par{ 
+    background: #4f8ef7; color: white; 
+}
+.value.impar{ 
+    background: #e94343; color: white; 
+}
+
+.stats{
+    margin-top: 10px;
+}

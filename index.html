@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacci</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+<main class="container">
+    <h1>Secuencia de Fibonacci</h1>
+
+    <form id="fib-formulario" class="controls">
+        <label for="count">Números a generar (1–50):</label>
+        <input id="count" name="count" type="number" min="1" max="50" value="10" required>
+        <button type="submit">Generar Secuencia</button>
+        <button id="clear" type="button">Limpiar</button>
+    </form>
+
+    <section id="output">
+        <p id="mensaje"></p>
+        <div id="result" class="result"></div>
+        <div id="stats" class="stats"></div>
+    </section>
+</main>
+
+</body>
+</html>
